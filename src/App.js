@@ -1,24 +1,45 @@
 import logo from './logo.svg';
 import './App.css';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route
+} from 'react-router-dom';
+import Galactic from './deck-1/galactic/galactic';
+import Hazard from './deck-1/hazard/hazard';
+import Iced from './deck-1/iced/iced';
+import Carapace from './deck-1/carapace/carapace';
+import Void from './deck-1/void/void';
+import Flash from './deck-1/flash/flash';
+import Corporate from './deck-1/corporate/corporate';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+        <Switch>
+            <Route path='/deck1/1'>
+                <Galactic/>
+            </Route>
+            <Route path='/deck1/2'>
+                <Hazard/>
+            </Route>
+            <Route path='/deck1/3'>
+                <Iced/>
+            </Route>
+            <Route path='/deck1/4'>
+                <Carapace/>
+            </Route>
+            <Route path='/deck1/5'>
+                <Void/>
+            </Route>
+            <Route path='/deck1/6'>
+                <Flash/>
+            </Route>
+            <Route path='/deck1/7'>
+                <Corporate/>
+            </Route>
+        </Switch>
+    </Router>
   );
 }
 
