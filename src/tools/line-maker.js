@@ -3,7 +3,7 @@ import _ from "lodash";
 /**
  * Class to help with drawing creative lines.
  */
- class LineMaker {
+class LineMaker {
     // Initialize by providing the processing context
     constructor(p) {
         this.p = p;

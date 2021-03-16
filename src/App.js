@@ -12,6 +12,7 @@ import Carapace from './deck-1/carapace/carapace';
 import Void from './deck-1/void/void';
 import Flash from './deck-1/flash/flash';
 import Corporate from './deck-1/corporate/corporate';
+import Test from './deck-1/test/test';
 
 function App() {
   return (
@@ -37,6 +38,9 @@ function App() {
             </Route>
             <Route path='/deck1/7'>
                 <Corporate/>
+            </Route>
+            <Route path='/deck1/8'>
+                <Test/>
             </Route>
         </Switch>
     </Router>
